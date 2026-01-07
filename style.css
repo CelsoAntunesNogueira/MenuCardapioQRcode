@@ -130,6 +130,7 @@ footer p {
         margin-top: 0.25rem;
     }
 }
+
 /* ===== MODO NOTURNO ===== */
 body.dark {
     background-color: #121212;
@@ -174,4 +175,28 @@ body.dark .toggle-dark {
     background-color: #f5f5f5;
     color: #121212;
 }
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #2c2c2c;
+    padding: 1rem;
+    position: sticky;
+    /* fica fixo no topo */
+    top: 0;
+    z-index: 100;
+}
 
+.menu-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.menu-nav a:hover {
+    background-color: #c0392b;
+    color: #fff;
+}
